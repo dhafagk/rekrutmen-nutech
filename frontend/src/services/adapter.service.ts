@@ -9,7 +9,7 @@ export default class AdapterService {
       // "http://127.0.0.1:8000/api",
     });
 
-    this.requestAPI.interceptors.request.use((config: any) =>
+    this.requestAPI.interceptors.request.use((config): any =>
       this.interceptToken(config)
     );
 
