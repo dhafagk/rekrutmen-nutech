@@ -5,9 +5,8 @@ export default class AdapterService {
 
   constructor() {
     this.requestAPI = axios.create({
-      baseURL:
-        // "https://product-be-rekrutmen-nutech-dhafa.000webhostapp.com/api",
-        "http://127.0.0.1:8000/api",
+      baseURL: "https://recruitment-nutech.dhafagk.my.id/api",
+      // "http://127.0.0.1:8000/api",
     });
 
     this.requestAPI.interceptors.request.use((config: any) =>
